@@ -1,36 +1,18 @@
 import { Container, Grid, styled } from "@mui/material";
-import LeoraMeditating from "ui/assets/images/Leora-meditating.png";
-import CloudTop from "ui/assets/images/Cloud-top.png";
-import CloudMiddle from "ui/assets/images/Cloud-middle.png";
-import Logo from "ui/assets/images/Logo.png";
+import LeoraBackground from "ui/assets/images/LeoraBackground.png";
+import Logo from "ui/assets/images/Leora-Logo-Blue.png";
 import React from "react";
 
 const SplashLoader = ({ children }: { children: React.ReactElement }) => (
     <Root>
-      <Container>
-        <Grid container alignContent="center">
-          <Grid
-            item
-            xs={12}
-            md={6}
-            alignSelf="center"
-            textAlign="center"
-            className="imageContainer"
-          >
-            <img
-              className="leoraImage floating"
-              src={LeoraMeditating}
-              alt="leora"
-            />
-            <img className="top hide-sm hide-md" src={CloudTop} alt="Logo" />
-            <img className="middle " src={CloudMiddle} alt="Logo" />
-          </Grid>
-          <Grid item xs={12} md={6} >
-            <div className="logoContainer">
-              <img className="logo" src={Logo} alt="Logo" />
-            </div>
+      <Container className="Background-image">
+        <Grid item xs={12} md={6} className="Grid-style">
             <div className="content">{children}</div>
-          </Grid>
+            <div className="logoContainer">
+              <div>
+              <img className="logo" src={Logo} alt="Logo" />
+              </div>
+            </div>
         </Grid>
       </Container>
     </Root>
@@ -41,18 +23,17 @@ export default SplashLoader;
 const Root = styled("main")(({ theme }) => ({
   backgroundColor: "#212242",
   color: "#fff",
+  overflow: "hidden",
+  "& .Background-image": {
+    backgroundImage: `url(${LeoraBackground})`,
+  },
   "& .MuiContainer-root": {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
     position: "relative",
-    [theme.breakpoints.down("md")]: {      
-      top: "50px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      top: "0px",
-    },
+    maxWidth: "1280px",
   },
   "& .leoraImage": {
     maxWidth: "100%",
@@ -69,20 +50,24 @@ const Root = styled("main")(({ theme }) => ({
     zIndex: 2,
     [theme.breakpoints.up("md")]: {
       left: "9%",
-    position: "relative",
     },
     [theme.breakpoints.down("md")]: {
       bottom: "85px",
       left: "75px",
-    position: "relative",
     },
   },
   "& .imageContainer": {
     position: "relative",
   },
+  "& .Grid-style": {
+    width: "100%",
+    alignSelf: "center",
+    textAlign: "center",
+    height: "100vh",
+  },
   "& .logoContainer": {
     width: "100%",
-    justifyContent: "center",
+    justifyContent: "end",
     display: "flex",
     position: "relative",
   },
@@ -118,11 +103,14 @@ const Root = styled("main")(({ theme }) => ({
     },
   },
   "& .content": {
-    fontSize: `2rem`,    
-    fontFamily: `'Poppins', sans-serif`,
+    fontSize: `14px`,    
+    fontFamily: `'LexendDeca', sans-serif`,
     lineHeight: `3rem`,
+    height: `85%`,
+    alignContent: `center`,
+    display: `grid`,
     [theme.breakpoints.down("md")]: {
-      fontSize: `1rem`,
+      fontSize: `14px`,
       lineHeight: `1.2rem`,
     },
   },

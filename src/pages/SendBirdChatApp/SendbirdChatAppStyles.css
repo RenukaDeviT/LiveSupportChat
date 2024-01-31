@@ -1,5 +1,10 @@
 .SendbirdChatAppStyles {
-    font-family: sans-serif;
-    text-align: center;
+    font-family: 'LexendDeca',sans-serif;
+    text-align: left;
     height: 100vh;
+    background-image: url(/src/ui/assets/images/LeoraBackground.png);
+  }
+
+  .sendbird-message-input--attach {
+    display: none;
   }

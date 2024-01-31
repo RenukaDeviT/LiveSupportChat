@@ -51,7 +51,7 @@ const themeProperties = {
       xLg: '2rem',
     },
     family: {
-      main: "'Poppins', sans-serif",
+      main: "'LexendDeca', sans-serif",
     },
     weight: {
       xSm: 300,

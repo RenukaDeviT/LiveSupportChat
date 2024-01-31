@@ -1,16 +1,14 @@
-import SplashLoader from "components/templates/Loader/SplashLoader";
+import ErrorLoader from "components/templates/Loader/ErrorLoader";
 
 const UnSecurePage = () => (
-    <SplashLoader>
+    <ErrorLoader>
       <>
-        <h6 className="content yellow">
-          "Oops! It seems there was an error during the page load.{" "}
-        </h6>
         <h6 className="content">
+          "Oops! It seems there was an error during the page load.{" "} <br />
           Unsecure Connection!!!
         </h6>
       </>
-    </SplashLoader>
+    </ErrorLoader>
   );
 
 export default UnSecurePage;

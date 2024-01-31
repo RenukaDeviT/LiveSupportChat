@@ -4,16 +4,15 @@ import { css } from '@emotion/react';
 
 const StyledSignIn = styled.div(
   ({ theme }) => css`
-    padding: 40px 49px;
+    padding: 50px 49px 30px 49px;
     position: relative;
-    width: calc(100% - 98px);
     height: 100%;
     overflow: hidden;
 
     .sign-in {
       &-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
       }
 
@@ -102,7 +101,6 @@ const StyledSignIn = styled.div(
         backdrop-filter: blur(8px);
         border-radius: 50px;
         padding: 0px 36px;
-        margin-left: 106px;
         z-index: 5;
       }
 
@@ -128,7 +126,6 @@ const StyledSignIn = styled.div(
         font-weight: ${theme.font.weight.sm};
         font-size: ${theme.font.size.sm};
         line-height: 21px;
-        letter-spacing: ${theme.font.letterSpacing};
         width: 100%;
         color: ${theme.colors.secondaryText};
       }
@@ -310,7 +307,6 @@ const StyledSignIn = styled.div(
       width: calc(100% - 98px);
       height: 100%;
       overflow: hidden;
-      bottom: 75px;
 
       .sign-in {
         &-wrapper {

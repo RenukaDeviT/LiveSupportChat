@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from 'react';
+import { memo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Button, IconButton, InputAdornment, TextField } from '@mui/material';
@@ -17,7 +17,7 @@ const SignInForm = () => {
         values,
         errors,
         touched,
-        isSubmitting,
+        // isSubmitting,
         setFieldValue,
         handleChange,
         handleSubmit,
@@ -63,10 +63,10 @@ const SignInForm = () => {
         console.log(e.target.value);
     };
 
-    const isButtonDisabled = useMemo(
-        () => !(values.username && values.password) || isSubmitting,
-        [isSubmitting, values.username, values.password],
-      );
+    // const isButtonDisabled = useMemo(
+        // () => !(values.username && values.password) || isSubmitting,
+        // [isSubmitting, values.username, values.password],
+      // );
 
     return (
     <div className="sign-in-wrapper">
@@ -148,7 +148,6 @@ const SignInForm = () => {
           helperText={touched.password && errors.password}
         />
         <Button
-          disabled={isButtonDisabled}
           type="submit"
           className="sign-in__form-login-button"
         >

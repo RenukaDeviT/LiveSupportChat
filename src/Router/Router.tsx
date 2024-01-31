@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { routePaths } from "utils/constants";
 import SignIn from "pages/SignIn/SignIn";
 import SendbirdChatApp from "pages/SendBirdChatApp/SendbirdChatApp";
+import Error from "components/templates/Error/Error";
+import UnSecurePage from "pages/UnSecurePage/UnSecurePage";
 
 const Router = () => { 
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ const Router = () => {
   };
 
   const { getRemainingTime } = useIdleTimer({
-    timeout: 60 * 10 * 1000,
+    timeout: 60 * 60 * 1000,
     onIdle,
   });
 
@@ -30,6 +32,8 @@ const Router = () => {
         <Routes>
           <Route path={routePaths.home} element={ <SignIn />} />
           <Route path={routePaths.supportChat} element={ <SendbirdChatApp />} />
+          <Route path={routePaths.error} element={ <Error/> } />
+          <Route path={routePaths.unsecurePage} element={ <UnSecurePage/> } />
         </Routes>
   )
 };

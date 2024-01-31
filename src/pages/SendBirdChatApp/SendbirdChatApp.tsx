@@ -5,8 +5,8 @@ import config from 'config';
 import './SendbirdChatAppStyles.css';
 
 const SignIn = () =>  (
-    <div className="SendbirdChatAppStyles">
-        <SendBirdApp appId={config.appId} userId={config.userId} accessToken={config.accessToken}/>
+    <div className="SendbirdChatAppStyles" >
+        <SendBirdApp appId={config.appId} userId={config.userId} accessToken={config.accessToken} />
     </div>
   );
 

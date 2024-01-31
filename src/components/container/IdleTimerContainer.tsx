@@ -13,7 +13,7 @@ function IdleTimerContainer() {
   const idleTimer = useIdleTimer({
     crossTab: true,
     ref: idleTimerRef,
-    timeout: 1000,
+    timeout: 3600000,
     onIdle,
     events: [
         'mousemove',

@@ -1,4 +1,6 @@
 export const routePaths = {
     home: "/",
-    supportChat: "/supportChat"
+    supportChat: "/supportChat",
+    error: "/error",
+    unsecurePage: "/unsecurePage"
   };

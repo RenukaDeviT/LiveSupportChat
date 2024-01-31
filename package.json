@@ -17,6 +17,7 @@
     "@types/react": "^18.2.39",
     "@types/react-dom": "^18.2.17",
     "@types/styled-components": "^5.1.34",
+    "env-cmd": "^10.1.0",
     "formik": "^2.4.5",
     "js-cookie": "^3.0.5",
     "react": "^18.2.0",
@@ -35,7 +36,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:stg": "env-cmd -f ./.env.stage npm run-script build",
+    "build:prod": "env-cmd -f ./.env.prod npm run-script build"
   },
   "eslintConfig": {
     "extends": [

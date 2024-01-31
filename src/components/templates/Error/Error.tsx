@@ -1,17 +1,14 @@
-import SplashLoader from "components/templates/Loader/SplashLoader";
+import ErrorLoader from "components/templates/Loader/ErrorLoader";
 
 const Error = () => (
-    <SplashLoader>
+    <ErrorLoader>
       <>
-        <h6 className="content yellow">
-          "Oops! It seems there was an error during the live chat.{" "}
-        </h6>
         <h6 className="content">
-          Our live chat session feature is undergoing maintenance to bring you even
+          "Oops! It seems there was an error during the live chat.{" "} <br /> Our live chat session feature is undergoing maintenance to bring you even
           better service!"
         </h6>
       </>
-    </SplashLoader>
+    </ErrorLoader>
   );
 
 export default Error;

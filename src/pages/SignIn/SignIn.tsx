@@ -4,7 +4,7 @@ import SignInForm from './components/SignInForm';
 import StyledSignIn from './SignIn.styles';
 
 const SignIn = () => (
-    <div style={{overflow: "hidden"}}>
+    <div>
       <SplashLoader>
         <StyledSignIn className="sign-in">
           <SignInForm />
