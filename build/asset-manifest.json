@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.1705aa80.css",
-    "main.js": "/static/js/main.76c7dee1.js",
+    "main.css": "/static/css/main.5c2383ce.css",
+    "main.js": "/static/js/main.b1faa680.js",
     "static/js/856.93ffee10.chunk.js": "/static/js/856.93ffee10.chunk.js",
     "static/js/539.16ee23c2.chunk.js": "/static/js/539.16ee23c2.chunk.js",
     "static/js/596.df83c1cd.chunk.js": "/static/js/596.df83c1cd.chunk.js",
     "static/js/668.5feb50ca.chunk.js": "/static/js/668.5feb50ca.chunk.js",
     "static/js/787.454980ce.chunk.js": "/static/js/787.454980ce.chunk.js",
-    "static/media/LeoraBackground.png": "/static/media/LeoraBackground.1621a6cc63955f9856ae.png",
+    "static/media/LeoraBackground.png": "/static/media/LeoraBackground.9d99392e9962d83f6cd4.png",
     "static/media/Leora-Logo-Blue.png": "/static/media/Leora-Logo-Blue.17f66fe4d3000ee7043c.png",
     "static/media/visibility-off-icon.svg": "/static/media/visibility-off-icon.de9ed08e975093fdaeab5ee76021fe8a.svg",
     "static/media/visibility-icon.svg": "/static/media/visibility-icon.bbabfd2fb6f21830ef8a417a25a14e65.svg",
     "index.html": "/index.html",
     "static/media/warning-icon.svg": "/static/media/warning-icon.e27edb1edbd2ece2d910bf87a57c8d64.svg",
-    "main.1705aa80.css.map": "/static/css/main.1705aa80.css.map",
-    "main.76c7dee1.js.map": "/static/js/main.76c7dee1.js.map",
+    "main.5c2383ce.css.map": "/static/css/main.5c2383ce.css.map",
+    "main.b1faa680.js.map": "/static/js/main.b1faa680.js.map",
     "856.93ffee10.chunk.js.map": "/static/js/856.93ffee10.chunk.js.map",
     "539.16ee23c2.chunk.js.map": "/static/js/539.16ee23c2.chunk.js.map",
     "596.df83c1cd.chunk.js.map": "/static/js/596.df83c1cd.chunk.js.map",
@@ -22,7 +22,7 @@
     "787.454980ce.chunk.js.map": "/static/js/787.454980ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1705aa80.css",
-    "static/js/main.76c7dee1.js"
+    "static/css/main.5c2383ce.css",
+    "static/js/main.b1faa680.js"
   ]
 }

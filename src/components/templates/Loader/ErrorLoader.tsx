@@ -29,6 +29,8 @@ const Root = styled("main")(({ theme }) => ({
   overflow: "hidden",
   "& .Background-image": {
     backgroundImage: `url(${LeoraBackground})`,
+    backgroundRepeat: `no-repeat`,
+    backgroundSize: `cover`
   },
   "& .MuiContainer-root": {
     display: "flex",
